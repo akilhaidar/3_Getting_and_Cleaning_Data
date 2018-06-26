@@ -6,7 +6,14 @@ First, we have to visualize and then understand the structure of the data provid
 
 Variables used:
 
-trainVal (X_train.txt) trainAct (y_train.txt) trainSub (subject_train.txt) testVal (X_test.txt) testAct (y_test.txt) testSub (subject_test.txt)
+activityLabels
+features 
+featuresWanted
+train 
+trainActivities
+trainSubjects
+test 
+etc
 
 These vaiables contain data from the downloaded files.
 
