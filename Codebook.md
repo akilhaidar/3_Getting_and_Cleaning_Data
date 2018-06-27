@@ -1,36 +1,36 @@
-Introduction
+Author: AKIL HAIDAR
 
-The script has 5 steps described in the course project's definition.
+Description
 
-First, we have to visualize and then understand the structure of the data provided to us in the zip file, like Subject, Values, Activities, etc, basically consolidating similar data (same columns). We use rbind function to merge similar data. Select columns with Mean and Standard Deviation from the dataset. Then we apply correct names to the fields as given in the file 'features.txt'. We take activity data with values 1:6 and select the activity names and IDs from the file 'activity_labels.txt'. Then we substitute them in the dataset. We correct columns with vague names in the dataset. In final step we generate a new dataset (full_data) with all the average measures for each subject and activity type (30 subjects * 6 activities = 180 rows). The output file is called 'tidy.txt', which I have uploaded to my Coursera submission.
+Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
 
-Variables used:
+Source Data
 
-activityLabels<-()
+Data + Description can be found here UCI Machine Learning Repository
 
-features <-()
+Data Set Information
 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
-featuresWanted<-()
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
+Attribute Information
 
+For each record in the dataset it is provided:
 
-train <-()
+Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+Triaxial Angular velocity from the gyroscope.
+A 561-feature vector with time and frequency domain variables.
+Its activity label.
+An identifier of the subject who carried out the experiment.
+Please see the README.md for how the following instructions are implemented README.md
 
-trainActivities<-()
+1. Merge the training and the test sets to create one data set.
 
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-trainSubjects<-()
+3. Uses descriptive activity names to name the activities in the data set
 
-test <-()
+4. Appropriately labels the data set with descriptive variable names.
 
-etc
-
-These vaiables contain data from the downloaded files.
-
-'dataVal', 'dataAct' and 'dataSub' merge the aforementioned 6 datasets for further analysis.
-'features' contains the correct names for the dataVal dataset, which we use to the column names stored in featuresMStdev (mean and standard deviation). This is a numeric vector used to extract the desired data.
-'activities' variable deals with the activity names.
-'full_data' merges 'dataVal', 'dataAct' and 'dataSub' in a consolidated and cleaned dataset.
-'mean_data' contains the required mean values, which will be later stored in a .txt file (tidy.txt). We have used the function 'ddply()' from the 'plyr' package to apply colMeans() to improve our analysis.
-:Just copy and paste the entire code in R and it will produce the tidy dataset
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
