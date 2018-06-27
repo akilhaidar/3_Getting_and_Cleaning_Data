@@ -16,9 +16,14 @@ featuresWanted<-()
 
 
 train <-()
+
 trainActivities<-()
+
+
 trainSubjects<-()
+
 test <-()
+
 etc
 
 These vaiables contain data from the downloaded files.
