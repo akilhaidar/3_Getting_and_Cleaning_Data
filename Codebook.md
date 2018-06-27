@@ -6,13 +6,19 @@ First, we have to visualize and then understand the structure of the data provid
 
 Variables used:
 
-activityLabels<-
-features <-
-featuresWanted<-
-train <-
-trainActivities<-
-trainSubjects<-
-test <-
+activityLabels<-()
+
+features <-()
+
+
+featuresWanted<-()
+
+
+
+train <-()
+trainActivities<-()
+trainSubjects<-()
+test <-()
 etc
 
 These vaiables contain data from the downloaded files.
